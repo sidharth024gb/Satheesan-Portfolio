@@ -1,0 +1,8 @@
+@keyframes marquee {
+    from{
+        left: 100%;
+    }
+    to{
+        left: -50%;
+    }
+}
