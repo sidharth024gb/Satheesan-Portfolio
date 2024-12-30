@@ -90,7 +90,6 @@ footer {
     filter: grayscale();
     left: 100%;
     width: 20%;
-    min-width: 150px;
     height: 100px;
     animation: marquee 30s linear infinite;
     animation-delay: calc(30s / 4 * (var(--delay) - 1));
