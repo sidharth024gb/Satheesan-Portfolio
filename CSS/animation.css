@@ -10,7 +10,6 @@
 @keyframes education {
   0% {
     opacity: 0;
-    clip-path: inset(100% 100% 100% 100%);
   }
   50% {
     transform: translateX(20%);
@@ -18,7 +17,6 @@
   100% {
     transform: translateX(0%);
     opacity: 1;
-    clip-path: inset(0 0 0 0);
   }
 }
 
