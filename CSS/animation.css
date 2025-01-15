@@ -1,8 +1,32 @@
 @keyframes marquee {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -50%;
+  }
+}
+
+@keyframes education {
+  0% {
+    opacity: 0;
+    clip-path: inset(100% 100% 100% 100%);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes progress-bar {
     from{
-        left: 100%;
+        width: 0;
     }
     to{
-        left: -50%;
+        width: var(--bar-width);
     }
 }

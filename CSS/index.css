@@ -29,6 +29,7 @@
 .font-2 {
   font-family: var(--font-2);
 }
+
 /* ######################################### */
 
 * {
@@ -72,7 +73,6 @@ footer {
   height: 90vh;
 }
 .worked-with {
-  
   & > [role="marquee"] {
     position: relative;
     height: 200px;
@@ -98,6 +98,10 @@ footer {
       filter: none;
     }
   }
+
+  &:hover img {
+    animation-play-state: paused;
+  }
 }
 
 section {
@@ -113,5 +117,28 @@ section {
   }
   &:hover > i {
     color: var(--accent);
+  }
+}
+
+/* ################### Education ################### */
+
+#education .card {
+  animation: education ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 30%;
+}
+#education .card .bar {
+  animation: progress-bar ease;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+
+.progress-bar-holder {
+  & .progress--bar {
+    height: fit-content;
+  }
+
+  & .bar {
+    height: 10px;
   }
 }
