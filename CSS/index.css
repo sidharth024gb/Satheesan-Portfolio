@@ -83,6 +83,10 @@ footer {
       hsl(0, 0%, 0%, 1) 80%,
       hsl(0, 0%, 0%, 0)
     );
+
+    &:hover img {
+      animation-play-state: paused;
+    }
   }
 
   & img {
@@ -98,10 +102,6 @@ footer {
       filter: none;
     }
   }
-
-  &:hover img {
-    animation-play-state: paused;
-  }
 }
 
 section {
@@ -109,15 +109,6 @@ section {
 }
 .list-alphabet {
   list-style: upper-alpha;
-}
-
-.social-links > a {
-  & > i {
-    transition: all 0.15s ease;
-  }
-  &:hover > i {
-    color: var(--accent);
-  }
 }
 
 /* ################### Education ################### */
@@ -140,5 +131,132 @@ section {
 
   & .bar {
     height: 10px;
+  }
+}
+
+/* ####################### Experience ####################### */
+
+#experience {
+  & .card {
+    --card-color: var(--color, blue);
+
+    outline: 1px solid var(--card-color);
+    height: 110px;
+    cursor: pointer;
+    transition: all 500ms ease;
+
+    &:hover {
+      background-color: var(--card-color);
+      color: white;
+      scale: 1.05;
+    }
+  }
+  & img {
+    width: 75px;
+    height: 75px;
+    top: -37.5px;
+    box-shadow: var(--card-color) 0px 2px 8px 0px;
+  }
+
+  & #accenture,
+  #accenture-2 {
+    --color: #a100ff;
+  }
+  & #diageo {
+    --color: #c80651;
+  }
+  & #atos {
+    --color: #0596ff;
+  }
+  & #jktech {
+    --color: #1857ff;
+  }
+
+  & #companies-projects > dialog {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    & button#dialog-close-btn {
+      border: none;
+      outline: none;
+      color: hsl(0, 100%, 40%);
+      background-color: transparent;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  & #companies-projects > dialog {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &#accenture,
+    &#accenture-2 {
+      background-image: url("../Images/Experience/Accenture.jpeg");
+    }
+    &#diageo {
+      background-image: url("../Images/Experience/Diageo.jpeg");
+    }
+    &#atos {
+      background-image: url("../Images/Experience/Atos.jpeg");
+    }
+    &#jktech {
+      background-image: url("../Images/Experience/JKteck.jpeg");
+    }
+  }
+}
+
+/* ###################### Carousel ###################### */
+
+#experience #companies-projects > dialog {
+  --card-color: var(--color, blue);
+  padding: 0;
+
+  & .my-carousel-prev,
+  & .my-carousel-next {
+    background-color: var(--card-color);
+    color: white;
+    border: none;
+    outline: none;
+  }
+
+  & .slide-active {
+    background-color: var(--card-color) !important;
+    width: 20px !important;
+    border-radius: 5px !important;
+  }
+  & .my-carousel-slide-no {
+    padding: 5px;
+    border: none;
+    outline: none;
+    width: 2px;
+    transition: all 500ms ease;
+  }
+
+  & .my-carousel-inner {
+    transition: all 500ms ease;
+  }
+
+  & .my-carousel-item {
+    min-width: 100%;
+    box-shadow: 0px 0px 8px hsla(0, 0%, 0%, 0.5);
+    background-color: hsla(0, 0%, 100%, 0.8);
+    backdrop-filter: blur(5px);
+  }
+}
+
+/* ################### Contact ################### */
+
+#contact{
+  height: 70vh;
+}
+
+.social-links > a {
+  & > i {
+    transition: all 0.15s ease;
+  }
+  &:hover > i {
+    color: var(--accent);
   }
 }

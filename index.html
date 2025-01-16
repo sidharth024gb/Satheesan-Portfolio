@@ -93,21 +93,25 @@
           <h3>Worked With</h3>
           <div role="marquee" class="d-flex justify-content-around flex-wrap">
             <img
-              src="./Images/accenture-logo.png"
+              src="./Images/Marquee/accenture-logo.png"
               alt="Accenture Logo"
               style="--delay: 1"
             />
             <img
-              src="./Images/diageo-logo.png"
+              src="./Images/Marquee/diageo-logo.png"
               alt="Diageo Logo"
               style="--delay: 2"
             />
             <img
-              src="./Images/atos-logo.png"
+              src="./Images/Marquee/atos-logo.png"
               alt="Atos Logo"
               style="--delay: 3"
             />
-            <img src="./Images/JK-logo.png" alt="JK Logo" style="--delay: 4" />
+            <img
+              src="./Images/Marquee/JK-logo.png"
+              alt="JK Logo"
+              style="--delay: 4"
+            />
           </div>
         </div>
       </section>
@@ -132,7 +136,569 @@
       </section>
       <section id="experience" class="container mb-5">
         <h3>Experience</h3>
-        <hr class="primary opacity-100 mt-0" />
+        <hr class="primary opacity-100 mt-0 mb-5" />
+        <div class="row row-cols-md-2 row-cols-lg-3 row-gap-3" id="companies">
+          <div class="p-3" id="accenture" data-company-name="accenture">
+            <div class="card text-center position-relative">
+              <img
+                src="./Images/Experience/Accenture.jpeg"
+                alt="accenture-logo"
+                class="rounded-circle position-absolute start-50 translate-middle-x"
+              />
+              <h5 class="mt-auto">Accenture</h5>
+              <h6 class="text-muted">Oct 2019 to Till Date</h6>
+            </div>
+          </div>
+          <div class="p-3" id="diageo" data-company-name="diageo">
+            <div class="card text-center position-relative">
+              <img
+                src="./Images/Experience/Diageo.jpeg"
+                alt="accenture-logo"
+                class="rounded-circle position-absolute start-50 translate-middle-x"
+              />
+              <h5 class="mt-auto">Diageo</h5>
+              <h6 class="text-muted">Jan 2017 to Sep 2019</h6>
+            </div>
+          </div>
+          <div class="p-3" id="accenture" data-company-name="accenture-2">
+            <div class="card text-center position-relative">
+              <img
+                src="./Images/Experience/Accenture.jpeg"
+                alt="accenture-logo"
+                class="rounded-circle position-absolute start-50 translate-middle-x"
+              />
+              <h5 class="mt-auto">Accenture</h5>
+              <h6 class="text-muted">Jul 2015 to Jan 2017</h6>
+            </div>
+          </div>
+          <div class="p-3" id="atos" data-company-name="atos">
+            <div class="card text-center position-relative">
+              <img
+                src="./Images/Experience/Atos.jpeg"
+                alt="accenture-logo"
+                class="rounded-circle position-absolute start-50 translate-middle-x"
+              />
+              <h5 class="mt-auto">Atos</h5>
+              <h6 class="text-muted">Aug 2013 to Jul 2015</h6>
+            </div>
+          </div>
+          <div class="p-3" id="jktech" data-company-name="jktech">
+            <div class="card text-center position-relative">
+              <img
+                src="./Images/Experience/JKteck.jpeg"
+                alt="accenture-logo"
+                class="rounded-circle position-absolute start-50 translate-middle-x"
+              />
+              <h5 class="mt-auto">JK Technosoft</h5>
+              <h6 class="text-muted">Jul 2010 to Jul 2013</h6>
+            </div>
+          </div>
+        </div>
+        <div id="companies-projects">
+          <dialog id="accenture" class="border-0 rounded">
+            <button id="dialog-close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="my-carousel p-3 overflow-hidden">
+              <h3 class="text-center">ACCENTURE</h3>
+              <div
+                class="my-carousel-btns d-flex justify-content-center align-items-center gap-3"
+              >
+                <button
+                  class="my-carousel-prev rounded-circle"
+                  data-dialog="accenture"
+                  data-action="-1"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button
+                  class="my-carousel-slide-no rounded-circle bg-secondary slide-active"
+                  data-action="0"
+                  data-dialog="accenture"
+                ></button>
+                <button
+                  class="my-carousel-slide-no rounded-circle bg-secondary"
+                  data-action="1"
+                  data-dialog="accenture"
+                ></button>
+                <button
+                  class="my-carousel-slide-no rounded-circle bg-secondary"
+                  data-action="2"
+                  data-dialog="accenture"
+                ></button>
+                <button
+                  class="my-carousel-slide-no rounded-circle bg-secondary"
+                  data-action="3"
+                  data-dialog="accenture"
+                ></button>
+
+                <button
+                  class="my-carousel-next rounded-circle"
+                  data-dialog="accenture"
+                  data-action="1"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="my-carousel-inner mt-3 p-2 d-flex gap-5">
+                <div class="my-carousel-item rounded p-2">
+                  <h4 class="mb-0">Enterprise Architect & Delivery Manager</h4>
+                  <h5 class="text-muted">
+                    Deutsche Bank – DWS Asset Management Project
+                  </h5>
+                  <ul class="my-carousel-body">
+                    <li>
+                      Led the finance transformation project, responsible for
+                      delivering functionalities from S4HANA, Ariba/Edge
+                      applications, PaPM, FPSL, EPPM, Group Reporting/BCS,
+                      BW/SAC, Process Unity, and integrated tools for a
+                      Greenfield implementation.
+                    </li>
+                    <li>
+                      Specialized in complex taxation regulations, including VAT
+                      9 Box (UK), Germany tax (50A, 37B, Wage Tax), EMEA/US
+                      Excise duty, US Vertex, and GST (APAC).
+                    </li>
+                    <li>
+                      Conducted workshops to initiate the project, gathering
+                      requirements and translating them into solutions aligned
+                      with the COO’s vision, focusing on simplification,
+                      automation, and elimination of inefficiencies in finance,
+                      tax, procurement, and transfer pricing.
+                    </li>
+                    <li>
+                      As Enterprise Architect, defined business processes and
+                      led the IT solutions restructuring and re-engineering
+                      efforts due to a business carve-out, introducing new tools
+                      and processes.
+                    </li>
+                    <li>
+                      Oversaw core module changes across Sales, Finance,
+                      Procurement, Legal, Audit, Compliance, and HR Integration,
+                      ensuring proper solution architecture and alignment.
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-carousel-item rounded p-2">
+                  <h4 class="mb-0">Enterprise Architect & Delivery Manager</h4>
+                  <h5 class="text-muted">
+                    Unilever Gro 24/7 Retail Transformation Project
+                  </h5>
+                  <ul class="my-carousel-body">
+                    <li>
+                      Led the transformation of Unilever’s B2C retail business,
+                      delivering functionalities from S4HANA and integrated
+                      Ariba/Edge applications for a Greenfield implementation.
+                    </li>
+                    <li>
+                      Conducted project initiation workshops, gathering
+                      requirements and transforming them into solutions that
+                      aligned with the COO’s vision for simplification,
+                      automation, and process elimination across finance, tax,
+                      procurement, and sales.
+                    </li>
+                    <li>
+                      Delivered comprehensive blueprint alignment and devised a
+                      strategic, phase-wise agile delivery plan.
+                    </li>
+                    <li>
+                      Managed the delivery of major application changes
+                      (RICEFW), overseeing the solution build, testing, and
+                      deployment.
+                    </li>
+                    <li>
+                      Provided leadership and mentorship to Architects,
+                      supporting their growth and development in collaboration
+                      with HR.
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-carousel-item rounded p-2">
+                  <h4 class="mb-0">Cutover Manager</h4>
+                  <h5 class="text-muted">Emami Transformation Project</h5>
+                  <ul class="my-carousel-body">
+                    <li>
+                      Led the cutover and data migration of Emami business, and
+                      implemented FSCM solution.
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-carousel-item rounded p-2">
+                  <h4 class="mb-0">Enterprise Architect</h4>
+                  <h5 class="text-muted">
+                    Britannia Industries Finance Transformation Project
+                  </h5>
+                  <ul class="my-carousel-body">
+                    <li>
+                      Led the S4HANA implementation for Britannia Industries as
+                      part of their finance transformation, overseeing the
+                      Greenfield project.
+                    </li>
+                    <li>
+                      Conducted workshops to define business requirements and
+                      developed solutions aligned with the CFO’s vision,
+                      focusing on simplification, automation, and process
+                      elimination across finance and integrated areas.
+                    </li>
+                    <li>
+                      Acted as the solution architect and delivery lead for
+                      FICO, FSCM (Credit, BCM), Treasury, and Collection
+                      Management modules.
+                    </li>
+                    <li>
+                      Managed the cutover phase, ensuring minimal downtime (1-2
+                      days) across workstreams and functions.
+                    </li>
+                    <li>
+                      Delivered major application changes (RICEFW), including
+                      solution design, build, testing, and deployment.
+                    </li>
+                    <li>
+                      Mentored Architects and managed their growth with HR
+                      support.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </dialog>
+          <dialog id="diageo" class="border-0 rounded">
+            <button id="dialog-close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="my-carousel p-3 overflow-hidden">
+              <h3 class="text-center">DIAGEO</h3>
+              <div
+                class="my-carousel-btns d-flex justify-content-center align-items-center gap-3"
+              >
+                <button
+                  class="my-carousel-prev rounded-circle"
+                  data-dialog="diageo"
+                  data-action="-1"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button
+                  class="my-carousel-slide-no rounded-circle bg-secondary slide-active"
+                  data-action="0"
+                  data-dialog="diageo"
+                ></button>
+                <button
+                  class="my-carousel-next rounded-circle"
+                  data-dialog="diageo"
+                  data-action="1"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="my-carousel-inner mt-3 p-2 d-flex gap-5">
+                <div class="my-carousel-item rounded p-2">
+                  <h4 class="mb-0">RTR Governance Lead</h4>
+                  <h5 class="text-muted">Rollout & Support, SAP CoE Team</h5>
+                  <ul class="my-carousel-body">
+                    <li>
+                      Led the Diageo Russia Spirit II rollout project, focusing
+                      on SAP FICO, inventory, procurement, and schedule
+                      management.
+                    </li>
+                    <li>
+                      Reviewed and approved all change requests as RTR
+                      Governance Lead.
+                    </li>
+                    <li>
+                      Delivered end-to-end application changes (RICEFW) for SAP
+                      FICO, TRM, Loans & Deposits Management, In-house Cash
+                      Management, Product Costing, Global Taxation, COPA, and
+                      integration tools (e.g., Hanse Orga, 360T).
+                    </li>
+                    <li>
+                      Spearheaded the innovation and automation of SAP business
+                      processes, addressing key pain points in the existing
+                      system.
+                    </li>
+                    <li>
+                      Led team-building efforts, including recruiting, training,
+                      and mentoring Architects.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </dialog>
+          <dialog id="accenture-2" class="border-0 rounded">
+            <button id="dialog-close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="my-carousel p-3 overflow-hidden">
+              <h3 class="text-center">ACCENTURE</h3>
+              <div
+                class="my-carousel-btns d-flex justify-content-center align-items-center gap-3"
+              >
+                <button
+                  class="my-carousel-prev rounded-circle"
+                  data-dialog="accenture-2"
+                  data-action="-1"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button
+                  class="my-carousel-slide-no rounded-circle bg-secondary slide-active"
+                  data-action="0"
+                  data-dialog="accenture-2"
+                ></button>
+                <button
+                  class="my-carousel-slide-no rounded-circle bg-secondary"
+                  data-action="1"
+                  data-dialog="accenture-2"
+                ></button>
+
+                <button
+                  class="my-carousel-next rounded-circle"
+                  data-dialog="accenture-2"
+                  data-action="1"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="my-carousel-inner mt-3 p-2 d-flex gap-5">
+                <div class="my-carousel-item rounded p-2">
+                  <h4 class="mb-0">Solution Architect</h4>
+                  <h5 class="text-muted">Unilever Project</h5>
+                  <ul class="my-carousel-body">
+                    <li>
+                      Led global rollout projects for Intercompany
+                      Settlement/Netting and BRS Automation for Unilever.
+                    </li>
+                    <li>
+                      Managed the replacement of RBS banks for payments and
+                      collections in a global rollout.
+                    </li>
+                    <li>
+                      Responsible for core SAP FICO module changes and
+                      interfaces for intercompany transactions and payment
+                      automation.
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-carousel-item rounded p-2">
+                  <h4 class="mb-0">Enterprise Architect</h4>
+                  <h5 class="text-muted">
+                    VF Brand Finance Transformation Project
+                  </h5>
+                  <ul class="my-carousel-body">
+                    <li>
+                      Led the implementation project as the solution architect
+                      for FICO, FSCM (Credit, BCM) modules.
+                    </li>
+                    <li>
+                      Delivered major application changes (RICEFW), including
+                      solution design, build, testing, and deployment.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </dialog>
+          <dialog id="atos" class="border-0 rounded">
+            <button id="dialog-close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="my-carousel p-3 overflow-hidden">
+              <h3 class="text-center">ATOS</h3>
+              <div
+                class="my-carousel-btns d-flex justify-content-center align-items-center gap-3"
+              >
+                <button
+                  class="my-carousel-prev rounded-circle"
+                  data-dialog="atos"
+                  data-action="-1"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button
+                  class="my-carousel-slide-no rounded-circle bg-secondary slide-active"
+                  data-action="0"
+                  data-dialog="atos"
+                ></button>
+                <button
+                  class="my-carousel-next rounded-circle"
+                  data-dialog="atos"
+                  data-action="1"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="my-carousel-inner mt-3 p-2 d-flex gap-5">
+                <div class="my-carousel-item rounded p-2">
+                  <h4 class="mb-0">Solution Architect</h4>
+                  <h5 class="text-muted">Implementation, Rollout & Support</h5>
+                  <ul class="my-carousel-body">
+                    <li>
+                      <b>FICO Solution Architect</b> for the “Rittal” rollout
+                      project, focusing on automating payments, BRS automation,
+                      product costing extensions, global report development
+                      using Report Painter/Writer, and custom report
+                      development.
+                    </li>
+                    <li>
+                      <b>TRM Solution Architect</b> for the “LIC India” support
+                      project, responsible for implementing limit management and
+                      developing customized reports, as well as rolling out
+                      product types and re-mapping account determination.
+                    </li>
+                    <li>
+                      <b>Banking, FSCM, TRM, and FICO Solution Architect</b> for
+                      the “National Housing Bank” support project, working on
+                      Dispute Management, Credit & Collection, Debt Recovery,
+                      and Cash & Liquidity Management, with additional
+                      development tasks.
+                    </li>
+                    <li>
+                      <b>FICO Solution Architect</b> for the “Siemens-Asia
+                      Pacific” support/rollout project, managing application
+                      change management in SAP FICO, Project Systems, In-House
+                      Cash Management, and Dispute, Credit & Collection.
+                      Involved in the implementation of FI-CIN (Excise, WHT,
+                      GTA, Service Tax, Customs, and VAT), and contributed to
+                      the RFP submission and POC development for Biller Direct
+                      with SAP SMP/Fiori application.
+                    </li>
+                    <li>
+                      <b>FICO Solution Architect</b> for the “Xerox-Antalis”
+                      rollout project, focused on automating SEPA payments,
+                      MT940 BRS automation, DME with BCM module implementation,
+                      and RICEFW object development.
+                    </li>
+                    <li>
+                      <b>Led core competency building,</b> including recruiting,
+                      nurturing, and training debut certified SAP Architects.
+                      Conducted TRM/FSCM, CML, and BCA training sessions for
+                      Atos employees.
+                    </li>
+                    <li>
+                      <b>Banking, TRM, FSCM, FICO Solution Architect</b> for the
+                      end-to-end implementation of the “Islamic Development
+                      Bank-Qatar,” managing 17 legal entities across GL, AA, AP,
+                      AR, Taxes, and Banking modules (loans, deposits,
+                      collateral). Led the development of customization objects
+                      in Banking and controlling, as well as RICEFW development.
+                    </li>
+                    <li>
+                      <b>
+                        FICO, TRM, FSCM, Real Estate, and Contract Management
+                        Architect
+                      </b>
+                      for RFP and POC development for clients such as Daimler,
+                      BMW, South Indian Bank, MagnaCare, and TKE.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </dialog>
+          <dialog id="jktech" class="border-0 rounded">
+            <button id="dialog-close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="my-carousel p-3 overflow-hidden">
+              <h3 class="text-center">JK TECHNOSOFT</h3>
+              <div
+                class="my-carousel-btns d-flex justify-content-center align-items-center gap-3"
+              >
+                <button
+                  class="my-carousel-prev rounded-circle"
+                  data-dialog="jktech"
+                  data-action="-1"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button
+                  class="my-carousel-slide-no rounded-circle bg-secondary slide-active"
+                  data-action="0"
+                  data-dialog="jktech"
+                ></button>
+                <button
+                  class="my-carousel-next rounded-circle"
+                  data-dialog="jktech"
+                  data-action="1"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="my-carousel-inner mt-3 p-2 d-flex gap-5">
+                <div class="my-carousel-item rounded p-2">
+                  <h4 class="mb-0">Solution Architect</h4>
+                  <h5 class="text-muted">Implementation, Rollout & Support</h5>
+                  <ul class="my-carousel-body">
+                    <li>
+                      <b>Solution Architect for Unilever Sri Lanka Limited</b> –
+                      Led end-to-end FICO and PS implementation, including 14
+                      legal entities across various modules (GL, AA, AP, AR,
+                      Taxes, Banking, Asset, COPA, Project Systems). Managed
+                      RICEFW, ARIBA, and TES interface developments. Oversaw the
+                      cutover process with tools for master data uploads, led
+                      testing, and provided go-live and warranty support.
+                    </li>
+                    <li>
+                      <b>FICO Solution Architect for Unilever</b> – Led the
+                      rollout of the standard chart of accounts, intercompany
+                      reconciliation, and IFRS ledger. Configured Trading
+                      Partner for intercompany settlements and improved
+                      financial reporting using SAP BW and SAP BCS. Supported
+                      the SAP EHP6 upgrade, validating and testing both standard
+                      and customized transactions, and resolving issues.
+                      Assisted with HANA month-end processing, including COPA
+                      and material ledger cycles, and error resolution.
+                    </li>
+                    <li>
+                      <b>
+                        FICO Solution Architect for Unilever India Exports Ltd
+                        (UIEL)
+                      </b>
+                      – Implemented changes across GL, AA, AP, AR, Taxes,
+                      Banking, CIN, and Project Systems modules for new
+                      entities. Provided month-end and year-end support until
+                      warranty completion.
+                    </li>
+                    <li>
+                      <b>FICO Solution Architect for Unilever Nepal Ltd</b> –
+                      Prepared business blueprint and configuration mappings
+                      between MFG-PRO and SAP for GL, Asset, and other modules.
+                    </li>
+                    <li>
+                      <b>Solution Architect for Venus Home Appliances</b> – Led
+                      end-to-end FICO implementation for 2 legal entities,
+                      covering GL, AA, AP, AR, Taxes, Banking, Asset, COPA, and
+                      Project Costing modules. Developed cutover tools, managed
+                      testing, and provided go-live.
+                    </li>
+                    <li>
+                      <b>Solution Architect for Karle Group</b> – Led end-to-end
+                      FICO implementation for 4 legal entities, managing
+                      configuration and RICEFW developments. Developed cutover
+                      tools, conducted testing, and provided go-live and
+                      warranty support.
+                    </li>
+                    <li>
+                      <b
+                        >FICO Solution Architect for Total Environment Real
+                        Estate</b
+                      >
+                      – Led banking automation initiatives including BRS MT940,
+                      interface development, automated payment configurations,
+                      and asset accounting.
+                    </li>
+                    <li>
+                      <b> FI Support Architect for Multiplex Agro </b>
+                      – Provided end-to-end documentation and user manuals for
+                      configuration and RICEF developments.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </dialog>
+        </div>
       </section>
       <section id="education" class="container mb-5">
         <h3>Education</h3>
@@ -243,20 +809,24 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="container mb-5">
-        <h2>Thank You</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil culpa
-          quo necessitatibus ipsa velit dicta consequuntur, sapiente facilis rem
-          autem dolorem vitae ratione ullam nam.
-        </p>
-        <a
-          href="./Satheesan Ganesan_Technology Executive Resume.docx"
-          class="btn btn-primary text-white"
-          download
-        >
-          Get My Resume
-        </a>
+      <section id="contact" class="container mb-5 d-flex flex-column justify-content-center">
+        <div class="text-center mb-3">
+          <h2>Thank You</h2>
+          <p>
+            Thank you for taking the time to review my portfolio. I appreciate
+            your interest and consideration. I look forward to the opportunity
+            to collaborate and contribute to future projects. Please feel free
+            to reach out if you have any questions or would like to discuss my
+            work further. Thank you once again!
+          </p>
+          <a
+            href="./Satheesan Ganesan_Technology Executive Resume.docx"
+            class="btn btn-primary text-white"
+            download
+          >
+            Get My Resume
+          </a>
+        </div>
         <div
           class="social-links d-flex justify-content-center gap-5 flex-wrap mt-3"
         >
